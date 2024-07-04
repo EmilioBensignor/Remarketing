@@ -6,21 +6,25 @@ const iconsTours = [
     img: "icon-todo-incluido",
     alt: "Todo Incluido",
     texto: "Todo incluido",
+    class: "iconIncluido"
   },
   {
     img: "icon-tours",
     alt: "Mas de 5700 tours",
     texto: "Más de 5700 tours",
+    class: "iconTours"
   },
   {
     img: "icon-tour-aereo",
     alt: "Tour + Aereo",
     texto: "Tour + Aéreo",
+    class: "iconTourAereo"
   },
   {
     img: "icon-flexibilidad",
     alt: "Flexibilidad y seguridad",
     texto: "Flexibilidad y seguridad",
+    class: "iconFlexibilidad"
   },
 ];
 const toursMundo = [
@@ -57,7 +61,7 @@ const toursMundo = [
 for (let i = 0; i < iconsTours.length; i++) {
   heroIcons.innerHTML += `
     <div>
-      <img src="/content/images/${iconsTours[i].img}.png" alt="${iconsTours[i].alt}" />
+      <div class="iconHero ${iconsTours[i].class}"></div>
       <p>${iconsTours[i].texto}</p>
     </div>
   `;
@@ -77,3 +81,23 @@ for (let j = 0; j < toursMundo.length; j++) {
     </div>
   `;
 }
+
+$("#ofertas").slick({
+  infinite: 0,
+  slidesToShow: 1.5,
+  slidesToScroll: 1.5,
+  variableWidth: !1,
+  centerMode: !1,
+  arrows: !1,
+  dots: !0
+})
+
+$("#review-items").slick({
+  infinite: !0,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: !1,
+  centerMode: !1,
+  arrows: !1,
+  dots: !0
+})

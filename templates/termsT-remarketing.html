@@ -14,8 +14,8 @@
   <title>Remarketing</title>
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-  <!-- <link rel="stylesheet" type="text/css" href="content/css/libs/libs-reducidas.css" /> -->
-  <!-- <link rel="stylesheet" type="text/css" href="content/css/styles-basicos.css" /> -->
+  <link rel="stylesheet" type="text/css" href="content/css/libs/libs-reducidas.css" />
+  <link rel="stylesheet" type="text/css" href="content/css/styles-basicos.css" />
   <link rel="stylesheet" href="/content/css/termsT-remarketing.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
   <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
 
-  <!-- <script defer type="text/javascript" src="content/js/libs/libs-reducidas.js"></script> -->
+  <script defer type="text/javascript" src="content/js/libs/libs-reducidas.js"></script>
   <script defer src="https://webchat.woztell.com/sdk.js"></script>
 </head>
 
@@ -46,47 +46,57 @@
     </section>
     <section class="tourIdeal">
       <h2>¿Como buscar un tour ideal para tus próximas vacaciones?</h2>
-      <iframe width="280" height="157" src="https://www.youtube.com/embed/0zE9C3roCBQ?si=xQrWBzovTgB_wCfQ"
+      <iframe width="85%" height="146" src="https://www.youtube.com/embed/0zE9C3roCBQ?si=xQrWBzovTgB_wCfQ"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
     <section>
-      SLIDER
+      <div id="ofertas">
+        <div class="slide">
+          <img src="/content/img/home/banner-beneficios-1-MOB.webp" />
+        </div>
+        <div class="slide">
+          <img src="/content/img/home/banner-beneficios-2-MOB.webp" />
+        </div>
+        <div class="slide">
+          <img src="/content/img/home/banner-beneficios-3-MOB.webp" />
+        </div>
+      </div>
     </section>
     <section class="opinionesPasajeros">
       <h2>Mira las opiniones de pasajeros que nos han elegido para su viaje</h2>
       <div id="review-items">
         <!--rvw-->
-        <div class="slide d-flex flex-xl-column align-items-center position-relative">
-          <a href="https://www.tourexperto.com/tripadvisor.html" class="link_tripadvisor" target="_blank"
-            aria-label="Ir a Tripadvisor"></a>
-          <img loading="lazy" src="/content/img/tripadvisor.svg" alt="Tripadvisor" class="tripadvisor    " width="119"
-            height="28">
-          <div class="caption-wrapper">
-            <div class="d-flex justify-content-start ">
-              <div class="caption-container cc-left lazy" data-background='/images/<!--img-->'>
-              </div>
-              <div class="cc-right">
-                <p><strong>
-                    <!--nom_rvw-->
-                  </strong> </p>
-                <div class="rating">
-                  <!--lasestrellas-->
+        <div class="slideReviews">
+          <a href="https://www.tourexperto.com/tripadvisor.html" class="linkTripadvisor" target="_blank"
+            aria-label="Ir a Tripadvisor">
+            <img loading="lazy" src="/content/img/tripadvisor.svg" alt="Tripadvisor" class="tripadvisor" width="119"
+              height="28">
+            <div class="reviewBody">
+              <div class="pasajeroReview">
+                <div class="pasajeroImagen" data-background='/images/<!--img-->' style="background-image: url('/images/<!--img-->');">
+                </div>
+                <div class="pasajeroNombre">
+                  <p><strong>
+                      <!--nom_rvw-->
+                    </strong> </p>
+                  <div class="rating">
+                    <!--lasestrellas-->
+                  </div>
                 </div>
               </div>
+              <div class="slide-text">
+                <p>
+                  <!--txt_obs-->
+                </p>
+              </div>
             </div>
-            <div class="slide-text">
-              <p>
-                <!--txt_obs-->
-              </p>
-            </div>
-          </div>
-          <div class="desborde" style="display:none;">...</div>
+            <div class="desborde">...</div>
+          </a>
         </div>
         <!--finrvw-->
       </div>
-
     </section>
     <section>
       <div class="algunaDuda">
