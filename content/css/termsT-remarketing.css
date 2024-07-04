@@ -14,6 +14,16 @@ main {
   font-family: "Raleway", sans-serif;
 }
 
+h1 {
+  font-size: 1.15rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+/* Hero */
+
 .heroSomos {
   display: flex;
   flex-direction: column;
@@ -56,32 +66,191 @@ main {
   text-align: center;
   color: white;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.65rem;
+}
+
+/* Tours Mundo */
+
+.toursMundo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .toursMundo h2 {
   text-align: center;
   color: #6C58FE;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
-.tours{
-  padding: 0 2rem;
+.tours {
+  width: 80%;
+}
+
+.tour {
+  display: flex;
+  flex-direction: column;
 }
 
 .tourImagen {
+  position: relative;
   background-image: url("/content/images/suenos-europa.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.tourImagen :first-child {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.tourImagen :last-child {
+  font-size: 0.65rem;
 }
 
 .tourPrecio {
+  align-self: flex-end;
+  position: relative;
+  z-index: 1;
   background: #DB326E;
   color: white;
+  border-radius: 8px 0 8px 8px;
+  padding: 0.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tourPrecio p {
+  font-size: 0.5rem;
+  text-align: end;
 }
 
 .precioAntiguo {
   text-decoration: line-through
+}
+
+.precio {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.verOfertas {
+  background: #DB326E;
+  color: white;
+  border-radius: 33px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0px 1px 3px 0px #00000040;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+/* Tour ideal */
+
+.tourIdeal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.tourIdeal h2 {
+  text-align: center;
+  color: #6C58FE;
+  margin-bottom: 1rem;
+}
+
+.tourIdeal iframe {
+  border-radius: 9px;
+}
+
+/* Opiniones Pasajeros */
+
+.opinionesPasajeros h2 {
+  text-align: center;
+  color: #6C58FE;
+  margin-bottom: 1rem;
+}
+
+/* Aluna duda */
+
+.algunaDuda {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.75rem;
+  background: #5B46A3;
+  color: white;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.mujerTelefono {
+  width: 50%;
+  height: 6.8rem;
+  background-image: url("/content/images/mujer-telefono.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.algunaDudaBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 0.75rem;
+}
+
+.algunaDudaBody h3 {
+  font-size: 0.9rem;
+}
+
+.algunaDudaBody p {
+  font-size: 0.75rem;
+}
+
+.algunaDudaBody button {
+  background-color: #DB326E;
+  color: white;
+  border: none;
+  border-radius: 33px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Ver el mundo */
+
+.verElMundo {
+  padding: 1rem;
+}
+
+.verMundo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/content/images/ver-mundo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 1px 3px 0px #0000002E;
+  border-radius: 9px;
+  color: white;
+  padding: 3rem 0 1rem 0;
+}
+
+.verMundo p{
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.verMundo a{
+  background: #D3245C;
+  border-radius: 33px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
 }
