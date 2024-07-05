@@ -94,10 +94,23 @@ $("#ofertas").slick({
 
 $("#review-items").slick({
   infinite: !0,
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   variableWidth: !1,
   centerMode: !1,
   arrows: !1,
-  dots: !0
+  dots: !0,
+  prevArrow: "<div class='prev-reviews arrows-ofertas slick-prev'></div>",
+  nextArrow: "<div class='next-reviews arrows-ofertas slick-next'></div>",
+  responsive: [
+    {
+      breakpoint: 660,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: !1,
+        variableWidth: !1,
+      }
+    }
+  ]
 })

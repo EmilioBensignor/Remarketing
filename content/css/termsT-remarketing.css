@@ -32,6 +32,10 @@ p {
   margin-bottom: 0;
 }
 
+section {
+  padding: 0.75rem 0;
+}
+
 /* Hero */
 
 .heroSomos {
@@ -42,10 +46,17 @@ p {
   padding: 1.5rem 0;
 }
 
+.heroMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .heroSomos h1 {
   width: 85%;
   text-align: center;
   color: white;
+  margin: 0;
 }
 
 .heroImagen {
@@ -70,6 +81,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   gap: 0.5rem;
 }
 
@@ -119,7 +131,8 @@ p {
 .toursMundo h2 {
   text-align: center;
   color: #6C58FE;
-  margin: 2rem 0;
+  margin-top: 0.75rem;
+  margin-bottom: 0.8rem;
 }
 
 .tours {
@@ -189,13 +202,16 @@ p {
   cursor: pointer;
 }
 
+.verOfertas:hover {
+  color: white;
+}
+
 /* Tour ideal */
 
 .tourIdeal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0;
 }
 
 .tourIdeal h2 {
@@ -218,6 +234,7 @@ p {
 .slideOfertas {
   display: flex !important;
   justify-content: center;
+  max-height: 205px;
 }
 
 .slideOfertas img {
@@ -231,18 +248,19 @@ p {
 .opinionesPasajeros h2 {
   text-align: center;
   color: #6C58FE;
-  margin: 3rem 0 1rem 0;
+  margin: 2rem auto 1rem auto;
+  width: 85%;
 }
 
 #review-items {
   width: 85%;
   margin: 0 auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .slideReviews {
   position: relative;
-  height: 190px !important;
+  height: 195px !important;
   border-radius: 9px;
   box-shadow: 0px 1px 3px 0px #0000002E;
   margin: 0.25rem;
@@ -267,6 +285,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.5rem;
   padding: 0.5rem;
 }
 
@@ -406,7 +425,7 @@ p {
 /* Ver el mundo */
 
 .verElMundo {
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .verMundo {
@@ -436,4 +455,99 @@ p {
   font-weight: bold;
   padding: 1rem 2rem;
   margin-top: 0.75rem;
+  cursor: pointer;
+}
+
+.tablet {
+  display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 660px) {
+  .tablet {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Hero */
+  .heroSomos {
+    flex-direction: row;
+    padding: 1.5rem;
+  }
+
+  .heroMobile {
+    gap: 1rem;
+  }
+
+  .heroImagen {
+    width: 75%;
+    border-radius: 18px;
+  }
+
+  /* Tours */
+
+  .tours {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tour {
+    width: 45%;
+  }
+
+  .tourPrecio {
+    margin-bottom: 0;
+    margin-top: -1.25rem;
+  }
+
+  /* Tour Ideal */
+
+  .tourIdeal iframe {
+    width: 65%;
+    height: 240px;
+  }
+
+  /* Alguna duda - Ver el mundo */
+  .dudaVerMundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.75rem 0.75rem;
+  }
+
+  .algunaDuda,
+  .verElMundo {
+    width: 45%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .algunaDuda {
+    border-radius: 9px;
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+
+  .algunaDudaBody {
+    gap: 0.5rem;
+  }
+
+  .algunaDudaBody button {
+    margin-top: 1rem;
+  }
+
+  .mujerTelefono {
+    height: 7rem;
+    background-size: contain;
+  }
+
 }
