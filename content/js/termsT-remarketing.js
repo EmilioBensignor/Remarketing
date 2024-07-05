@@ -84,8 +84,8 @@ for (let j = 0; j < toursMundo.length; j++) {
 
 $("#ofertas").slick({
   infinite: 0,
-  slidesToShow: 1.5,
-  slidesToScroll: 1.5,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   variableWidth: !1,
   centerMode: !1,
   arrows: !1,
