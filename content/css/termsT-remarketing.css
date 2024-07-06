@@ -24,6 +24,7 @@ h1 {
 }
 
 h2 {
+  width: 95%;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -47,6 +48,7 @@ section {
 }
 
 .heroMobile {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,7 +223,10 @@ section {
 }
 
 .tourIdeal iframe {
+  width: 270px;
+  height: 152px;
   border-radius: 9px;
+  box-shadow: 0px 1px 3px 0px #0000002E;
 }
 
 /* Ofertas */
@@ -234,7 +239,12 @@ section {
 .slideOfertas {
   display: flex !important;
   justify-content: center;
-  max-height: 205px;
+}
+
+.slideOfertas a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .slideOfertas img {
@@ -248,7 +258,7 @@ section {
 .opinionesPasajeros h2 {
   text-align: center;
   color: #6C58FE;
-  margin: 2rem auto 1rem auto;
+  margin: 0 auto 1rem auto;
   width: 85%;
 }
 
@@ -286,7 +296,7 @@ section {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-  padding: 0.5rem;
+  padding: 0 0.75rem;
 }
 
 .pasajeroReview {
@@ -343,7 +353,11 @@ section {
 .slide-text {
   max-height: 106px;
   overflow: hidden;
-  line-height: 1.1;
+  line-height: 1.2;
+}
+
+.slide-text p {
+  font-size: 0.9rem;
 }
 
 .slick-dots {
@@ -390,7 +404,7 @@ section {
   width: 50%;
   height: 6.8rem;
   background-image: url("/content/img/remarketing/mujer-telefono.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -462,6 +476,56 @@ section {
   display: none;
 }
 
+@media only screen and (min-width: 420px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .heroIcons div p {
+    font-size: 0.7rem;
+  }
+
+  .tourImagen :first-child {
+    font-size: 1rem;
+  }
+
+  .tourImagen :last-child {
+    font-size: 0.8rem;
+  }
+
+  .tourPrecio {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .tourPrecio p {
+    font-size: 0.6rem;
+  }
+
+  .tourIdeal iframe {
+    width: 357px;
+    height: 201px;
+  }
+}
+
+@media only screen and (min-width: 530px) {
+  .tourPrecio {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .tourPrecio p {
+    font-size: 0.7rem;
+  }
+
+  .tourIdeal iframe {
+    width: 450px;
+    height: 253px;
+  }
+}
+
 /* Tablet */
 @media only screen and (min-width: 660px) {
   .tablet {
@@ -476,6 +540,11 @@ section {
   .heroSomos {
     flex-direction: row;
     padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .heroSomos h1 {
+    width: 100%;
   }
 
   .heroMobile {
@@ -483,8 +552,13 @@ section {
   }
 
   .heroImagen {
-    width: 75%;
+    width: 100%;
     border-radius: 18px;
+    margin: 0;
+  }
+
+  .heroIcons {
+    width: 100%;
   }
 
   /* Tours */
@@ -503,16 +577,24 @@ section {
     width: 45%;
   }
 
+  .tourImagen :last-child {
+    font-size: 0.7rem;
+  }
+
   .tourPrecio {
     margin-bottom: 0;
     margin-top: -1.25rem;
   }
 
+  .tourPrecio p {
+    font-size: 0.6rem;
+  }
+
   /* Tour Ideal */
 
   .tourIdeal iframe {
-    width: 65%;
-    height: 240px;
+    width: 500px;
+    height: 281px;
   }
 
   /* Alguna duda - Ver el mundo */
@@ -549,5 +631,54 @@ section {
     height: 7rem;
     background-size: contain;
   }
+}
 
+@media only screen and (min-width: 800px) {
+  .heroImagen {
+    height: 12rem;
+  }
+
+  .tourImagen :last-child {
+    font-size: 0.8rem;
+  }
+
+  .tourPrecio p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .heroSomos h1 {
+    width: 85%;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .heroIcons div p {
+    font-size: 0.75rem;
+  }
+
+  .heroMobile {
+    gap: 3rem;
+  }
+
+  .heroImagen {
+    height: 14rem;
+  }
+
+  .tourImagen {
+    padding: 1.5rem;
+  }
+
+  .verOfertas {
+    font-size: 1rem;
+  }
+
+  .tourIdeal iframe {
+    width: 650px;
+    height: 366px;
+  }
 }

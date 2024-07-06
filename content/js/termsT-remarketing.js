@@ -84,12 +84,20 @@ for (let j = 0; j < toursMundo.length; j++) {
 
 $("#ofertas").slick({
   infinite: 0,
-  slidesToShow: 1,
+  slidesToShow: 1.5,
   slidesToScroll: 1,
   variableWidth: !1,
   centerMode: !1,
   arrows: !1,
-  dots: !0
+  dots: !1,
+  responsive: [
+    {
+      breakpoint: 530,
+      settings: {
+        slidesToShow: 1.3,
+      }
+    }
+  ]
 })
 
 $("#review-items").slick({
