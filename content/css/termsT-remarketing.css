@@ -20,6 +20,7 @@ main {
 }
 
 h1 {
+  font-weight: bold;
   font-size: 1.15rem;
 }
 
@@ -392,12 +393,17 @@ section {
 /* Aluna duda */
 
 .algunaDuda {
+  background: #5B46A3;
+  color: white;
+  padding-top: 1rem;
+}
+
+.algunaDudaContent {
+  width: 85%;
   display: flex;
   align-items: flex-end;
   gap: 0.75rem;
-  background: #5B46A3;
-  color: white;
-  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto;
 }
 
 .mujerTelefono {
@@ -414,10 +420,13 @@ section {
   flex-direction: column;
   gap: 0.2rem;
   padding-bottom: 0.75rem;
+  line-height: 1.3;
 }
 
 .algunaDudaBody h3 {
   font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .algunaDudaBody p {
@@ -439,7 +448,9 @@ section {
 /* Ver el mundo */
 
 .verElMundo {
-  padding: 1.5rem 1rem;
+  width: 85%;
+  padding: 1.5rem 0;
+  margin: 0 auto;
 }
 
 .verMundo {
@@ -455,6 +466,11 @@ section {
   border-radius: 9px;
   color: white;
   padding: 3rem 0 1rem 0;
+}
+
+.verMundo h2 {
+  text-align: center;
+  margin-bottom: 0 !important;
 }
 
 .verMundo p {
@@ -509,6 +525,15 @@ section {
     width: 357px;
     height: 201px;
   }
+
+  .mujerTelefono {
+    width: 40%;
+    height: 7rem;
+  }
+
+  .algunaDudaBody button {
+    width: 85%;
+  }
 }
 
 @media only screen and (min-width: 530px) {
@@ -524,6 +549,32 @@ section {
     width: 450px;
     height: 253px;
   }
+
+  .mujerTelefono {
+    width: 30%;
+    height: 8rem;
+  }
+
+  .algunaDudaBody h3 {
+    font-size: 1rem;
+  }
+
+  .algunaDudaBody p {
+    font-size: 0.85rem;
+  }
+
+  .algunaDudaBody button {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+
+  .verMundo {
+    padding: 5rem 0 2rem 0;
+  }
+
+  .verMundo p {
+    font-size: 0.9rem;
+  }
 }
 
 /* Tablet */
@@ -534,6 +585,10 @@ section {
 
   .mobile {
     display: none;
+  }
+
+  section {
+    padding: 1rem 0;
   }
 
   /* Hero */
@@ -562,6 +617,10 @@ section {
   }
 
   /* Tours */
+
+  .toursMundo h2 {
+    margin-top: 1rem;
+  }
 
   .tours {
     width: 100%;
@@ -593,43 +652,106 @@ section {
   /* Tour Ideal */
 
   .tourIdeal iframe {
-    width: 500px;
+    width: 498px;
     height: 281px;
+  }
+
+  /* Ofertas */
+
+  .ofertas {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ofertasTablet {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .ofertasTablet a:first-child {
+    width: 50%;
+  }
+
+  .ofertasTablet a {
+    width: 24%;
+  }
+
+  .ofertasTablet a img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #00000054;
+  }
+
+  /* Opiniones */
+
+  #review-items {
+    width: 92%;
+  }
+
+  .slideReviews {
+    margin: 0.25rem 0.5rem;
   }
 
   /* Alguna duda - Ver el mundo */
   .dudaVerMundo {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
-    padding: 0.75rem 0.75rem;
+    padding: 1rem 0 2rem 0;
+    margin: 0 auto;
   }
 
   .algunaDuda,
   .verElMundo {
-    width: 45%;
+    width: 50%;
     height: 100%;
     padding: 0;
   }
 
   .algunaDuda {
     border-radius: 9px;
-    padding: 2rem 0.5rem 0 0.5rem;
+    padding: 1.75rem 1rem 0 1rem;
+  }
+
+  .algunaDudaContent {
+    width: 100%;
   }
 
   .algunaDudaBody {
     gap: 0.5rem;
   }
 
+  .algunaDudaBody h3 {
+    font-size: 0.85rem;
+  }
+
+  .algunaDudaBody p {
+    font-size: 0.7rem;
+  }
+
   .algunaDudaBody button {
+    width: 100%;
     margin-top: 1rem;
   }
 
   .mujerTelefono {
-    height: 7rem;
+    width: 90%;
+    height: 9.5rem;
     background-size: contain;
+  }
+
+  .verMundo {
+    padding: 3.5rem 0 1.35rem 0;
+  }
+
+  .verMundo p {
+    font-size: 0.75rem;
   }
 }
 
@@ -645,6 +767,35 @@ section {
   .tourPrecio p {
     font-size: 0.7rem;
   }
+
+  .algunaDuda {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .mujerTelefono {
+    width: 60%;
+  }
+
+  .algunaDudaBody {
+    padding-bottom: 1rem;
+  }
+
+  .algunaDudaBody h3 {
+    font-size: 1rem;
+  }
+
+  .algunaDudaBody p {
+    font-size: 0.8rem;
+  }
+
+  .algunaDudaBody button {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+
+  .verMundo p {
+    font-size: 0.85rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -655,6 +806,11 @@ section {
 
   h2 {
     font-size: 1.3rem;
+    margin-bottom: 1.2rem !important;
+  }
+
+  section {
+    padding: 1.25rem 0;
   }
 
   .heroIcons div p {
@@ -669,6 +825,10 @@ section {
     height: 14rem;
   }
 
+  .toursMundo h2 {
+    margin-top: 1.25rem 0 1.2rem 0;
+  }
+
   .tourImagen {
     padding: 1.5rem;
   }
@@ -677,8 +837,38 @@ section {
     font-size: 1rem;
   }
 
+  .tourIdeal h2{
+    margin-bottom: 1.2rem;
+  }
+
   .tourIdeal iframe {
-    width: 650px;
+    width: 649px;
     height: 366px;
+  }
+
+  .dudaVerMundo {
+    padding: 1.25rem 0 2.5rem 0;
+  }
+
+  .mujerTelefono {
+    height: 10.5rem;
+    width: 45%;
+  }
+
+  .algunaDudaBody h3 {
+    font-size: 1.2rem;
+  }
+
+  .algunaDudaBody p,
+  .verMundo p {
+    font-size: 0.9rem;
+  }
+
+  .algunaDudaBody button {
+    font-size: 0.9rem;
+  }
+
+  .verMundo {
+    padding: 3.95rem 0 1.35rem 0;
   }
 }

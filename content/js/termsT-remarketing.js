@@ -108,8 +108,6 @@ $("#review-items").slick({
   centerMode: !1,
   arrows: !1,
   dots: !0,
-  prevArrow: "<div class='prev-reviews arrows-ofertas slick-prev'></div>",
-  nextArrow: "<div class='next-reviews arrows-ofertas slick-next'></div>",
   responsive: [
     {
       breakpoint: 660,
