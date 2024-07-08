@@ -12,6 +12,7 @@ body[data-entorno="tourexperto.com"] {
   --url-sprite_hero: url(//imagenes.tourexperto.com/content/img/shared/sprite_header.webp?v=1.02);
 }
 
+a[href^="tel:"]{width:-webkit-max-content;width:-moz-max-content;width:max-content;height:-webkit-max-content;height:-moz-max-content;height:max-content;}
 
 main {
   max-width: 992px;
@@ -318,19 +319,8 @@ section {
   height: 40px;
 }
 
-.rating svg {
-  font-size: .875em;
-}
-
-.rating .badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-}
-
-.star-s,
-.star-r {
+.stars,
+.starr {
   width: 12px;
   height: 12px;
   border: 1px solid #34E0A1;
@@ -338,11 +328,11 @@ section {
   border-radius: 50%;
 }
 
-.star-r {
+.starr {
   background-color: #fff;
 }
 
-.star-s {
+.stars {
   background-color: #34E0A1;
 }
 

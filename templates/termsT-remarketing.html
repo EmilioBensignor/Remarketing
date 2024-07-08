@@ -45,7 +45,7 @@
     <section class="toursMundo">
       <h2>Tours a todas partes del mundo</h2>
       <div id="tours" class="tours"></div>
-      <a class="verOfertas">Ver más tours en oferta</a>
+      <a href="https://tourexperto.com/cgi-bin/tesearch.pl?ofertas=1&idOrder=3&seg=4" class="verOfertas">Ver más tours en oferta</a>
     </section>
     <section class="tourIdeal">
       <h2>¿Como buscar un tour ideal para tus próximas vacaciones?</h2>
@@ -58,19 +58,19 @@
       <div class="mobile">
         <div id="ofertas">
           <div class="slideOfertas">
-            <a href="#">
+            <a href="https://tourexperto.com/ventajas.html">
               <img class="firstSlide" src="/content/img/home/banner-beneficios-1-MOB.webp"
                 alt="Reserva tu viaje con el 20% del valor" />
             </a>
           </div>
           <div class="slideOfertas">
-            <a href="#">
+            <a href="https://tourexperto.com/ventajas.html">
               <img src="/content/img/home/banner-beneficios-2-MOB-B.webp"
                 alt="Todos nuestros tours incluyen beneficios exclusivos" />
             </a>
           </div>
           <div class="slideOfertas">
-            <a href="#">
+            <a href="https://tourexperto.com/ventajas.html">
               <img src="/content/img/home/banner-beneficios-3-MOB-B.webp"
                 alt="Cobertura al pasajero con assist card y 10GB de internet gratis" />
             </a>
@@ -78,14 +78,14 @@
         </div>
       </div>
       <div class="tablet ofertasTablet">
-        <a href="#">
+        <a href="https://tourexperto.com/ventajas.html">
           <img src="/content/img/home/home-beneficios1.webp" alt="Reserva tu viaje con el 20% del valor" />
         </a>
-        <a href="#">
+        <a href="https://tourexperto.com/ventajas.html">
           <img src="/content/img/home/home-beneficios2.webp"
             alt="Todos nuestros tours incluyen beneficios exclusivos" />
         </a>
-        <a href="#">
+        <a href="https://tourexperto.com/ventajas.html">
           <img src="/content/img/home/home-beneficios3.webp"
             alt="Cobertura al pasajero con assist card y 10GB de internet gratis" />
         </a>
@@ -141,16 +141,47 @@
         <div class="verMundo">
           <h2>Tu forma de ver el mundo</h2>
           <p>Explora el blog creado por nuestros Expertos</p>
-          <a>Explorar blog</a>
+          <a href="https://blog.tourexperto.com/">Explorar blog</a>
         </div>
       </div>
     </section>
   </main>
 
+  <frameset>
+    <frame id="view_phone"></frame>
+  </frameset>
+  <div class="float-wapp" style="display:none;"><a
+      href="https://wa.me/+17542673454?text=Hola,%20Quiero%20hacer%20una%20consulta"><img loading="lazy"
+        src="/content/img/icons/btn-wapp.webp" alt="Ir a ventana de Whatsapp" width="66" height="66"></a></div>
   <footer id="footer" class="footer-pagina"></footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script defer type="text/javascript" src="/content/js/termsT-remarketing.js"></script>
+  <script>
+    var watcherPagina = setInterval(function () {
+      if (window.jQuery) {
+        clearInterval(watcherPagina);
+        window.onload = function () {
+          onloadHeader();
+          $('.float-wapp a').click(function (e) {
+            e.preventDefault();
+            if (screen.width < 520) {
+              window.open($('.float-wapp a').attr('href'), 'view_phone', "width=1,height=1");
+            } else {
+              window.open($('.float-wapp a').attr('href'), 'view_phone', "width=500,height=500");
+            }
+          })
+          $(window).resize(function () {
+            resizeHeader();
+          })
+        }   //fin window.onload
+      }  //fin   if (window.jQuery
+    });
+  </script>
 </body>
 
 </html>
+
+<!--stars-->
+<div class="star<!--tipostar-->"></div>
+<!--finstars-->
