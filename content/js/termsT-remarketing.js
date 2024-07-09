@@ -27,6 +27,7 @@ const iconsTours = [
     class: "iconFlexibilidad"
   },
 ];
+
 const toursMundo = [
   {
     fondo: "suenos-europa",
@@ -70,7 +71,7 @@ for (let i = 0; i < iconsTours.length; i++) {
 for (let j = 0; j < toursMundo.length; j++) {
   tours.innerHTML += `
     <div class="tour">
-      <div class="tourImagen">
+      <div class="tourImagen ${toursMundo[j].fondo}">
         <p>${toursMundo[j].titulo}</p>
         <p>${toursMundo[j].diasNoches}</p>
       </div>
