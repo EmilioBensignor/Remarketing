@@ -218,6 +218,7 @@ section {
 
 .tourPrecio p {
   font-size: 0.5rem;
+  font-weight: 600;
   text-align: end;
 }
 
