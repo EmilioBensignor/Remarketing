@@ -12,7 +12,7 @@ body {
   --tour-suenos-europa: url(/content/img/remarketing/suenos-de-europa.webp);
   --tour-japon-china: url(/content/img/remarketing/japon-y-china-express.webp);
   --mujer-telefono: url(/content/img/home/chica-con-telefono-sin-fondo.webp);
-  --fondo-blog: url(/blog.webp)
+  --fondo-blog: url(/content/img/remarketing/blog.webp)
 }
 
 body[data-entorno="tourexperto.com"] {
@@ -23,7 +23,7 @@ body[data-entorno="tourexperto.com"] {
   --tour-suenos-europa: url(//imagenes.tourexperto.com/content/img/remarketing/suenos-de-europa.webp);
   --tour-japon-china: url(//imagenes.tourexperto.com/content/img/remarketing/japon-y-china-express.webp);
   --mujer-telefono: url(//imagenes.tourexperto.com/content/img/home/chica-con-telefono-sin-fondo.webp);
-  --fondo-blog: url(//imagenes.tourexperto.com/blog.webp)
+  --fondo-blog: url(//imagenes.tourexperto.com/content/img/remarketing/blog.webp)
 }
 
 a[href^="tel:"] {
